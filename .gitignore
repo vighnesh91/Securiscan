@@ -1,0 +1,23 @@
+# --- Securiscan Artifact Veto Rules ---
+# Block all automatically generated triage reports
+securiscan_*.pdf
+*.pdf.error.txt
+
+# --- Python Operational Runtime ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# --- Environment & Secret Handshakes ---
+.env
+.env.local
+session.txt
+auth_*.txt
+
+# --- Mobile Binary Working Dirs ---
+*.apk
+*.ipa
